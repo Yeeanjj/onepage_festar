@@ -1,0 +1,68 @@
+video {
+  width: 100%;
+}
+.section_content {
+  position: relative;
+  background: #f6f6f6;
+  background: url(../images/backgronnd_img620.png) no-repeat 0 0;
+  background-size: 50%;
+}
+.main_content {
+  padding: 150px 0;
+}
+.festar_txtbox {
+  position: relative;
+  &::after {
+    position: absolute;
+    bottom: -40px;
+    left: 0;
+    display: block;
+    content: "";
+    height: 5px;
+    width: 288px;
+    background: #e73656;
+  }
+  .festar_txtbox_tit {
+    font-size: 65px;
+    color: #e73656;
+  }
+  // .festar_txtbox_text {
+  //   font-size: 32px;
+  //   font-weight: 700;
+
+  //   margin-top: 5px;
+  // }
+}
+.festar_list {
+  margin-top: 85px;
+}
+.list_images {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  li {
+    position: relative;
+    .program_togo {
+      display: block;
+      width: 288px;
+      height: 195px;
+      filter: grayscale(0.7);
+      &:hover {
+        overflow: hidden;
+        filter: grayscale(0);
+        img {
+          transform: scale(1.1);
+        }
+      }
+      .listimg_txt {
+        z-index: 10;
+        position: absolute;
+        bottom: 15px;
+        left: 15px;
+        color: #fff;
+        font-size: 18px;
+        font-weight: 600;
+      }
+    }
+  }
+}
