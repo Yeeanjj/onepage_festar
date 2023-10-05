@@ -416,7 +416,12 @@ video {
 }
 .festar_txtbox .festar_txtbox_tit {
   font-size: 65px;
+}
+.festar_txtbox .festar_txtbox_text {
+  font-size: 32px;
+  font-weight: 700;
   color: #e73656;
+  margin-top: 5px;
 }
 
 .festar_list {
