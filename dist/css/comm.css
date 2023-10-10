@@ -278,7 +278,7 @@ legend {
 }
 
 .inner {
-  max-width: 1280px;
+  max-width: 1300px;
   margin: 0 auto;
 }
 
@@ -331,8 +331,8 @@ img {
   display: block;
   font-size: 1.375rem;
   font-weight: 600;
-  height: 100px;
-  line-height: 100px;
+  height: 80px;
+  line-height: 80px;
 }
 .gnb .gnb_maintit:hover {
   color: #e73656;
@@ -344,7 +344,7 @@ img {
   z-index: 10;
   display: none;
   position: absolute;
-  top: 98px;
+  top: 79px;
   left: 50%;
   transform: translateX(-50%);
   width: 200px;
@@ -393,31 +393,53 @@ img {
   font-weight: normal;
   font-style: normal;
 }
+.video_wrap {
+  box-sizing: border-box;
+  list-style: none;
+}
+
 video {
   width: 100%;
   border: 0;
 }
 
+.main_infonav {
+  background: #e73656;
+}
+.main_infonav .infonav_txt {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.main_infonav .infonav_txt li {
+  position: relative;
+  font-size: 1.75rem;
+  font-weight: 600;
+}
+.main_infonav .infonav_txt li a {
+  display: block;
+  height: 60px;
+  line-height: 60px;
+  color: #fff;
+  font-weight: 600;
+}
+.main_infonav .infonav_txt li a:hover {
+  color: #000;
+  font-weight: 700;
+}
+
 .section_content {
   position: relative;
-  background: #f6f6f6;
-  background: url(../images/backgronnd_img620.png) no-repeat 0 0;
-  background-size: 60%;
-  z-index: -10;
-  padding-bottom: 300px;
+  box-sizing: border-box;
+  background: url(../../images/main_today.jpg) 50% 100%/cover no-repeat;
 }
 
-.seccont_tit {
-  text-align: center;
-  font-size: 52px;
-  padding-top: 150px;
-  color: #e73656;
-}
-
-.content_wrapper {
-  position: relative;
-  padding-top: 100px;
-  width: 1000px;
+.content_imgwrapper {
+  position: absolute;
+  top: 14%;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 10;
 }
 
 .festar_desingimg {
@@ -427,96 +449,98 @@ video {
 }
 
 .desingimg-g {
-  width: 100px;
-  height: 150px;
-  margin-right: 15px;
+  width: 120px;
+  height: 170px;
+  margin-right: 20px;
 }
 .desingimg-g:last-child {
   margin-right: 0;
 }
 
 .festar_nom1 {
-  width: 70px;
+  width: 80px;
 }
 
 .festar_nom0 {
-  width: 120px;
-  height: 120px;
+  width: 150px;
+  height: 150px;
 }
 
 .festar_h {
-  width: 120px;
+  width: 150px;
 }
 
-.festar_txteffect {
-  position: relative;
-  margin-top: 30px;
+.festar_f {
+  width: 140px;
 }
 
-.effact_text {
-  position: relative;
-  font-weight: 700;
-  text-align: right;
-}
-.effact_text .text_main {
-  font-size: 70px;
-  font-family: "SBAggroB";
-}
-.effact_text .text_main::before {
-  content: "20";
-  display: block;
-  position: absolute;
-  top: -20px;
-  left: 0;
-  font-size: 55px;
-  font-family: "SBAggroB";
-}
-.effact_text .text_main::after {
-  content: "23";
-  display: block;
-  position: absolute;
-  bottom: -12px;
-  left: 0;
-  font-size: 55px;
-  font-family: "SBAggroB";
+.festar_e {
+  width: 130px;
 }
 
-.effact_textnumber {
-  position: absolute;
-  bottom: -110px;
-  left: 0;
-  right: 0;
+.cover {
+  padding: 350px 0 150px;
+  background-color: #fff;
+  mix-blend-mode: lighten;
+}
+.cover .contentwrppar {
   display: flex;
-  justify-content: space-between;
   align-items: center;
-}
-.effact_textnumber .text_days {
-  font-family: "Sofia Sans Extra Condensed", sans-serif;
-  font-size: 85px;
-  font-weight: 600;
-  display: flex;
-  align-items: flex-start;
-}
-.effact_textnumber .text_days .effact_day {
-  font-size: 53px;
-}
-.effact_textnumber .text_sub {
-  font-size: 57px;
-  font-weight: 700;
+  justify-content: center;
 }
 
-.effact_box {
-  position: absolute;
-  top: 4%;
-  left: -10%;
-  z-index: -1;
+.text_main {
+  text-align: center;
+  font-size: 150px;
+  font-weight: 800;
+  position: relative;
+  font-family: "SBAggroB";
+  line-height: 160px;
+  letter-spacing: 25px;
 }
-.effact_box::after {
-  content: "";
-  display: block;
-  width: 1200px;
-  height: 500px;
+
+.section_infomation {
+  background: #e73656;
+  padding: 100px 0;
+}
+.section_infomation .festar_infobox {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.section_infomation .festar_infobox .festar_infoimages img {
+  width: 440px;
+  height: 600px;
+}
+.section_infomation .infotxtbox {
   background: #fff;
-  box-shadow: 3px 3px 3px gray;
+  padding: 35px 35px 35px 20px;
   border-radius: 10px;
+}
+.section_infomation .infobox_lst {
+  display: flex;
+}
+.section_infomation .infobox_lst .txtbox_tit {
+  position: relative;
+  font-size: 28px;
+  font-weight: 500;
+  width: 180px;
+  height: 40px;
+  color: #fff;
+  background: #e73656;
+  border-radius: 100px;
+  text-align: center;
+  padding: 5px;
+  margin: 0 25px 30px;
+}
+.section_infomation .infobox_lst .txtbox_txt {
+  font-size: 24px;
+  font-weight: 500;
+}
+
+.program_lst {
+  display: flex;
+}
+.program_lst:nth-child(2) {
+  flex-direction: row-reverse;
 }/*# sourceMappingURL=comm.css.map */
