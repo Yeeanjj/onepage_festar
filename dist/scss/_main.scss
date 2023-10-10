@@ -18,17 +18,20 @@ video {
   .infonav_txt {
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: center;
     li {
       position: relative;
       font-size: 1.75rem;
       font-weight: 600;
+      width: 32%;
       a {
         display: block;
+        width: 100%;
         height: 60px;
         line-height: 60px;
         color: #fff;
         font-weight: 600;
+        text-align: center;
         &:hover {
           color: #000;
           font-weight: 700;
@@ -106,8 +109,8 @@ video {
     justify-content: space-between;
     .festar_infoimages {
       img {
-        width: 440px;
-        height: 600px;
+        width: 400px;
+        height: 560px;
       }
     }
   }
@@ -120,10 +123,10 @@ video {
     display: flex;
     .txtbox_tit {
       position: relative;
-      font-size: 28px;
-      font-weight: 500;
-      width: 180px;
-      height: 40px;
+      font-size: 25px;
+      font-weight: 600;
+      width: 170px;
+      height: 35px;
       color: #fff;
       background: #e73656;
       border-radius: 100px;
@@ -132,7 +135,7 @@ video {
       margin: 0 25px 30px;
     }
     .txtbox_txt {
-      font-size: 24px;
+      font-size: 20px;
       font-weight: 500;
     }
   }
