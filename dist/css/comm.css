@@ -387,6 +387,16 @@ img {
   height: 100%;
 }
 
+.title {
+  position: relative;
+  font-size: 50px;
+  font-weight: 800;
+  text-align: center;
+  padding-bottom: 150px;
+  color: #e73656;
+  font-family: "SBAggroB";
+}
+
 @font-face {
   font-family: "SBAggroB";
   src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2108@1.1/SBAggroB.woff") format("woff");
@@ -431,13 +441,13 @@ video {
   font-weight: 700;
 }
 
-.section_content {
+.section_banner {
   position: relative;
   box-sizing: border-box;
   background: url(../../images/main_today.jpg) 50% 100%/cover no-repeat;
 }
 
-.content_imgwrapper {
+.banner_imgwrapper {
   position: absolute;
   top: 14%;
   left: 50%;
@@ -486,7 +496,7 @@ video {
   background-color: #fff;
   mix-blend-mode: lighten;
 }
-.cover .contentwrppar {
+.cover .bannerwrppar {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -494,7 +504,7 @@ video {
 
 .text_main {
   text-align: center;
-  font-size: 150px;
+  font-size: 9.375rem;
   font-weight: 800;
   position: relative;
   font-family: "SBAggroB";
@@ -525,7 +535,7 @@ video {
 }
 .section_infomation .infobox_lst .txtbox_tit {
   position: relative;
-  font-size: 25px;
+  font-size: 1.5625rem;
   font-weight: 600;
   width: 170px;
   height: 35px;
@@ -537,13 +547,126 @@ video {
   margin: 0 25px 30px;
 }
 .section_infomation .infobox_lst .txtbox_txt {
-  font-size: 20px;
+  font-size: 1.25rem;
   font-weight: 500;
+}
+
+.section_content {
+  padding: 200px 0;
+  background: #f6f6f6;
 }
 
 .program_lst {
   display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 150px;
 }
 .program_lst:nth-child(2) {
+  position: relative;
   flex-direction: row-reverse;
+  text-align: right;
+}
+.program_lst:nth-child(2)::before {
+  position: absolute;
+  top: -25%;
+  left: 50%;
+  transform: translateX(-50%);
+  content: "";
+  width: 80%;
+  height: 5px;
+  background: #e73656;
+}
+.program_lst:nth-child(2)::after {
+  position: absolute;
+  bottom: -25%;
+  left: 50%;
+  transform: translateX(-50%);
+  content: "";
+  width: 80%;
+  height: 5px;
+  background: #e73656;
+}
+.program_lst:last-child {
+  margin-bottom: 0;
+}
+
+.porogtam_img {
+  width: 380px;
+  height: 300px;
+}
+
+.proinfobox_txtbox {
+  width: 65%;
+  font-size: 1.25rem;
+  font-weight: 500;
+  line-height: 35px;
+}
+.proinfobox_txtbox span {
+  display: block;
+}
+.proinfobox_txtbox .program_days {
+  text-align: center;
+  font-weight: 600;
+  color: #fff;
+  background: #e73656;
+  width: 16%;
+  margin-bottom: 15px;
+}
+.proinfobox_txtbox .daytwo {
+  margin: 0 0 15px auto;
+}
+.proinfobox_txtbox .proinfobox_subtit {
+  color: #555;
+}
+.proinfobox_txtbox .proinfobox_tit {
+  font-size: 1.5rem;
+  color: #e73656;
+  font-weight: 700;
+}
+
+.content_programsecond {
+  margin-top: 150px;
+}
+.content_programsecond .prosecon_infobox {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.content_programsecond .second_lst {
+  position: relative;
+  text-align: center;
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 35px;
+}
+.content_programsecond .second_lst span {
+  display: block;
+}
+.content_programsecond .second_lst .second_titbox {
+  position: absolute;
+  top: -20%;
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 18px;
+  font-weight: 600;
+  color: #fff;
+  background: #e73656;
+  border-radius: 100px;
+  width: 100%;
+  height: 40px;
+  line-height: 40px;
+}
+.content_programsecond .second_lst .titboxtwo {
+  background: #222;
+}
+.content_programsecond .second_lst .second_subtit {
+  color: #555;
+  font-size: 20px;
+}
+.content_programsecond .second_lst .second_tit {
+  font-size: 24px;
+  color: #e73656;
+  font-weight: 700;
+  margin-bottom: 10px;
 }/*# sourceMappingURL=comm.css.map */

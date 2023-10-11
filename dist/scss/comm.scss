@@ -117,5 +117,14 @@ img {
     }
   }
 }
+.title {
+  position: relative;
+  font-size: 50px;
+  font-weight: 800;
+  text-align: center;
+  padding-bottom: 150px;
+  color: #e73656;
+  font-family: "SBAggroB";
+}
 
 @import "main";

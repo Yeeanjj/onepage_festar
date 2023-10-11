@@ -40,12 +40,12 @@ video {
     }
   }
 }
-.section_content {
+.section_banner {
   position: relative;
   box-sizing: border-box;
   background: url(../../images/main_today.jpg) 50% 100% / cover no-repeat;
 }
-.content_imgwrapper {
+.banner_imgwrapper {
   position: absolute;
   top: 14%;
   left: 50%;
@@ -85,7 +85,7 @@ video {
   padding: 350px 0 150px;
   background-color: #fff;
   mix-blend-mode: lighten;
-  .contentwrppar {
+  .bannerwrppar {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -93,7 +93,7 @@ video {
 }
 .text_main {
   text-align: center;
-  font-size: 150px;
+  font-size: 9.375rem;
   font-weight: 800;
   position: relative;
   font-family: "SBAggroB";
@@ -123,7 +123,7 @@ video {
     display: flex;
     .txtbox_tit {
       position: relative;
-      font-size: 25px;
+      font-size: 1.5625rem;
       font-weight: 600;
       width: 170px;
       height: 35px;
@@ -135,14 +135,123 @@ video {
       margin: 0 25px 30px;
     }
     .txtbox_txt {
-      font-size: 20px;
+      font-size: 1.25rem;
       font-weight: 500;
     }
   }
 }
+.section_content {
+  padding: 200px 0;
+  background: #f6f6f6;
+}
 .program_lst {
   display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 150px;
   &:nth-child(2) {
+    position: relative;
     flex-direction: row-reverse;
+    text-align: right;
+    &::before {
+      position: absolute;
+      top: -25%;
+      left: 50%;
+      transform: translateX(-50%);
+      content: "";
+      width: 80%;
+      height: 5px;
+      background: #e73656;
+    }
+    &::after {
+      position: absolute;
+      bottom: -25%;
+      left: 50%;
+      transform: translateX(-50%);
+      content: "";
+      width: 80%;
+      height: 5px;
+      background: #e73656;
+    }
+  }
+  &:last-child {
+    margin-bottom: 0;
+  }
+}
+.porogtam_img {
+  width: 380px;
+  height: 300px;
+}
+.proinfobox_txtbox {
+  width: 65%;
+  font-size: 1.25rem;
+  font-weight: 500;
+  line-height: 35px;
+  span {
+    display: block;
+  }
+  .program_days {
+    text-align: center;
+    font-weight: 600;
+    color: #fff;
+    background: #e73656;
+    width: 16%;
+    margin-bottom: 15px;
+  }
+  .daytwo {
+    margin: 0 0 15px auto;
+  }
+  .proinfobox_subtit {
+    color: #555;
+  }
+  .proinfobox_tit {
+    font-size: 1.5rem;
+    color: #e73656;
+    font-weight: 700;
+  }
+}
+.content_programsecond {
+  margin-top: 150px;
+  .prosecon_infobox {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .second_lst {
+    position: relative;
+    text-align: center;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 35px;
+    span {
+      display: block;
+    }
+    .second_titbox {
+      position: absolute;
+      top: -20%;
+      left: 50%;
+      transform: translateX(-50%);
+      font-size: 18px;
+      font-weight: 600;
+      color: #fff;
+      background: #e73656;
+      border-radius: 100px;
+      width: 100%;
+      height: 40px;
+      line-height: 40px;
+    }
+    .titboxtwo {
+      background: #222;
+    }
+    .second_subtit {
+      color: #555;
+      font-size: 20px;
+    }
+    .second_tit {
+      font-size: 24px;
+      color: #e73656;
+      font-weight: 700;
+      margin-bottom: 10px;
+    }
   }
 }
