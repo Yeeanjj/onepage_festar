@@ -1,17 +1,53 @@
-@font-face {
-  font-family: "SBAggroB";
-  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2108@1.1/SBAggroB.woff")
-    format("woff");
-  font-weight: normal;
-  font-style: normal;
-}
-.video_wrap {
-  box-sizing: border-box;
-  list-style: none;
-}
-video {
-  width: 100%;
-  border: 0;
+// .video_wrap {
+//   box-sizing: border-box;
+//   list-style: none;
+// }
+// video {
+//   width: 100%;
+//   border: 0;
+// }
+.main_visual {
+  position: relative;
+  padding: 480px;
+  background: url(../../images/mainbrtnsd.jpg) no-repeat 0 0;
+  background-size: 100% 100vh;
+  &::after {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: block;
+    content: "";
+    width: 100%;
+    height: 100%;
+    background: #000;
+    opacity: 0.28;
+  }
+  .banner_txtbox {
+    z-index: 1;
+    position: absolute;
+    top: 45%;
+    left: 50%;
+    transform: translate(-50%);
+    text-align: center;
+    width: 100%;
+    .bnr_tit {
+      font-size: 70px;
+      font-family: SBAggroB;
+      color: #fff;
+      font-weight: 900;
+    }
+    .banner_txt {
+      font-size: 22px;
+      font-weight: 500;
+      color: #f6f6f6;
+      .txtbox_point {
+        font-weight: 600;
+        color: #fff;
+      }
+    }
+  }
 }
 .main_infonav {
   background: #e73656;
@@ -21,7 +57,7 @@ video {
     justify-content: center;
     li {
       position: relative;
-      font-size: 1.75rem;
+      font-size: 24px;
       font-weight: 600;
       width: 32%;
       a {
@@ -30,10 +66,9 @@ video {
         height: 60px;
         line-height: 60px;
         color: #fff;
-        font-weight: 600;
         text-align: center;
         &:hover {
-          color: #000;
+          color: #444;
           font-weight: 700;
         }
       }
@@ -141,38 +176,43 @@ video {
   }
 }
 .section_content {
+  background: #fff;
   padding: 200px 0;
-  background: #f6f6f6;
 }
 .program_lst {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  margin-bottom: 150px;
+  margin-bottom: 250px;
   &:nth-child(2) {
     position: relative;
     flex-direction: row-reverse;
     text-align: right;
-    &::before {
-      position: absolute;
-      top: -25%;
-      left: 50%;
-      transform: translateX(-50%);
-      content: "";
-      width: 80%;
-      height: 5px;
-      background: #e73656;
-    }
-    &::after {
-      position: absolute;
-      bottom: -25%;
-      left: 50%;
-      transform: translateX(-50%);
-      content: "";
-      width: 80%;
-      height: 5px;
-      background: #e73656;
-    }
+  }
+}
+.program_infobox {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  &::before {
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    transform: translateX(-50%);
+    content: "";
+    width: 80%;
+    height: 5px;
+    background: #e73656;
+  }
+  &::after {
+    position: absolute;
+    bottom: 30%;
+    left: 50%;
+    transform: translateX(-50%);
+    content: "";
+    width: 80%;
+    height: 5px;
+    background: #e73656;
   }
   &:last-child {
     margin-bottom: 0;
@@ -211,11 +251,12 @@ video {
   }
 }
 .content_programsecond {
-  margin-top: 150px;
+  margin-top: 250px;
   .prosecon_infobox {
     display: flex;
     align-items: center;
     justify-content: space-between;
+    margin-top: 25px;
   }
   .second_lst {
     position: relative;
@@ -251,7 +292,7 @@ video {
       font-size: 24px;
       color: #e73656;
       font-weight: 700;
-      margin-bottom: 10px;
+      margin-bottom: 20px;
     }
   }
 }

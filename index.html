@@ -58,12 +58,12 @@
   <body>
     <div class="wrap">
       <header id="header">
-        <div class="inner headerbar">
-          <div class="top_logo">
+        <div class="headerbar">
+          <h1 class="top_logo">
             <a href="#">
               <img src="./images/festarLogo.png" alt="10th 문화가 있는 날" />
             </a>
-          </div>
+          </h1>
           <div class="gnb_bar">
             <ul class="gnb">
               <li class="depth1">
@@ -125,14 +125,28 @@
       </header>
       <main id="main">
         <section class="main_visual">
-          <div class="video_wrap">
+          <div class="banner_txtbox">
+            <h2 class="bnr_tit">맨날 만날 문화가 있는 날</h2>
+            <p class="banner_txt">
+              당신의 일상의 <span class="txtbox_point">쉼표</span>, 국민의
+              <span class="txtbox_point">문화누림</span><br />
+              문화의 달 10월,
+              <span class="txtbox_point">매일 매일 즐기는 문화가 있는 날</span
+              ><br />
+              문화가 있는 날 주간에만 누렸던 혜택들이<br />
+              <span class="txtbox_point"
+                >10주년을 맞아 한달 내내, 전국 구석구석에서 펼쳐집니다.</span
+              >
+            </p>
+          </div>
+          <!-- <div class="video_wrap">
             <video autoplay muted loop>
               <source
                 src="https://www.culture.go.kr/wday/festa10/html/resource/media/fest_10th.mp4"
                 type="video/mp4"
               />
             </video>
-          </div>
+          </div> -->
         </section>
         <div class="main_infonav">
           <ul class="inner infonav_txt">
@@ -266,11 +280,15 @@
         <section class="sec-g section_content">
           <div class="inner content_program">
             <h2 class="title program_tit">
-              3일간의 특별한 행복<br />
+              <span class="title_sub">3일간의 특별한 행복</span>
               문화가 있는 날 베스트 프로그램
             </h2>
             <ul class="program_infobox">
-              <li class="program_lst">
+              <li
+                data-aos="fade-right"
+                data-aos-duration="1500"
+                class="program_lst"
+              >
                 <img class="porogtam_img" src="./images/proimg1.jpg" alt="" />
                 <div class="proinfobox_txtbox">
                   <span class="program_days">10월 20일(금)</span>
@@ -289,7 +307,11 @@
                   </p>
                 </div>
               </li>
-              <li class="program_lst">
+              <li
+                data-aos="fade-left"
+                data-aos-duration="1500"
+                class="program_lst"
+              >
                 <img class="porogtam_img" src="./images/proimg2.jpg" alt="" />
                 <div class="proinfobox_txtbox">
                   <span class="program_days daytwo">10월 21일(토)</span>
@@ -308,7 +330,11 @@
                   </p>
                 </div>
               </li>
-              <li class="program_lst">
+              <li
+                data-aos="fade-right"
+                data-aos-duration="1500"
+                class="program_lst"
+              >
                 <img class="porogtam_img" src="./images/proimg3.jpg" alt="" />
                 <div class="proinfobox_txtbox">
                   <span class="program_days">10월 22일(일)</span>
@@ -331,7 +357,8 @@
           </div>
           <div class="inner content_programsecond">
             <h2 class="title program_subtit">
-              3일간의 특별한 행복<br />문화가 있는 날을 함께 즐기는 3가지 방법
+              <span class="title_sub">3일간의 특별한 행복</span>
+              문화가 있는 날을 함께 즐기는 3가지 방법
             </h2>
             <ul class="prosecon_infobox">
               <li class="second_lst">
@@ -388,10 +415,10 @@
             </ul>
           </div>
         </section>
-        <section class="">
-          <div class="">
-            <div class=""></div>
-            <div class=""></div>
+        <section class="sec-g section_event">
+          <div class="evrnt_wrapper">
+            <div class="local_event"></div>
+            <div class="connection_event"></div>
           </div>
         </section>
       </main>
