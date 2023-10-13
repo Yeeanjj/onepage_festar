@@ -1,13 +1,6 @@
 @charset "UTF-8";
 @import "reset";
 
-// @font-face {
-//   font-family: "SBAggroB";
-//   src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2108@1.1/SBAggroB.woff")
-//     format("woff");
-//   font-weight: normal;
-//   font-style: normal;
-// }
 .wrap {
   overflow: hidden;
   position: relative;
@@ -61,7 +54,7 @@ img {
   }
   .gnb_maintit {
     display: block;
-    font-size: 18px;
+    font-size: 1.125rem;
     font-weight: 500;
     height: 80px;
     line-height: 80px;
@@ -122,14 +115,14 @@ img {
 }
 .title {
   position: relative;
-  font-size: 40px;
+  font-size: 2.5rem;
   text-align: center;
   padding-bottom: 150px;
   font-family: "SBAggro";
   color: #222;
   .title_sub {
     display: block;
-    font-size: 55px;
+    font-size: 3.4375rem;
     font-weight: 300;
     color: #e73656;
   }

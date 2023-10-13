@@ -464,7 +464,7 @@ img {
 }
 .main_infonav .infonav_txt li {
   position: relative;
-  font-size: 24px;
+  font-size: 18px;
   font-weight: 600;
   width: 20%;
 }
@@ -588,7 +588,7 @@ img {
 }
 .section_infomation .infobox_lst .txtbox_txt {
   font-size: 1.25rem;
-  font-weight: 600;
+  font-weight: 500;
 }
 
 .section_content {
@@ -646,7 +646,6 @@ img {
 .proinfobox_txtbox {
   width: 65%;
   font-size: 1.25rem;
-  font-weight: 500;
   line-height: 35px;
 }
 .proinfobox_txtbox span {
@@ -658,13 +657,10 @@ img {
   color: #fff;
   background: #e73656;
   width: 16%;
-  margin-bottom: 15px;
+  margin-bottom: 5px;
 }
 .proinfobox_txtbox .daytwo {
-  margin: 0 0 15px auto;
-}
-.proinfobox_txtbox .proinfobox_subtit {
-  color: #555;
+  margin: 0 0 5px auto;
 }
 .proinfobox_txtbox .proinfobox_tit {
   font-size: 1.5rem;

@@ -34,7 +34,7 @@
     width: 100%;
     .bnr_tit {
       position: relative;
-      font-size: 65px;
+      font-size: 4.0625rem;
       // font-family: SBAggro;
       color: #fff;
       font-weight: 700;
@@ -52,7 +52,7 @@
       }
     }
     .banner_txt {
-      font-size: 22px;
+      font-size: 1.375rem;
       font-weight: 600;
       color: #eee;
       margin-top: 15px;
@@ -71,7 +71,7 @@
     justify-content: center;
     li {
       position: relative;
-      font-size: 24px;
+      font-size: 1.125rem;
       font-weight: 600;
       width: 20%;
       a {
@@ -185,7 +185,7 @@
     }
     .txtbox_txt {
       font-size: 1.25rem;
-      font-weight: 600;
+      font-weight: 500;
     }
   }
 }
@@ -240,7 +240,6 @@
 .proinfobox_txtbox {
   width: 65%;
   font-size: 1.25rem;
-  font-weight: 500;
   line-height: 35px;
   span {
     display: block;
@@ -251,13 +250,10 @@
     color: #fff;
     background: #e73656;
     width: 16%;
-    margin-bottom: 15px;
+    margin-bottom: 5px;
   }
   .daytwo {
-    margin: 0 0 15px auto;
-  }
-  .proinfobox_subtit {
-    color: #555;
+    margin: 0 0 5px auto;
   }
   .proinfobox_tit {
     font-size: 1.5rem;
@@ -278,7 +274,7 @@
   .second_lst {
     position: relative;
     text-align: center;
-    font-size: 18px;
+    font-size: 1.125rem;
     font-weight: 500;
     line-height: 1.5;
     width: 30%;
@@ -286,7 +282,7 @@
       display: block;
     }
     .second_titbox {
-      font-size: 18px;
+      font-size: 1.125rem;
       font-weight: 600;
       color: #fff;
       background: #e73656;
@@ -306,7 +302,7 @@
       align-items: center;
       justify-content: center;
       height: 86px;
-      font-size: 36px;
+      font-size: 2.25rem;
       color: #e73656;
       font-weight: 700;
       margin-bottom: 35px;
