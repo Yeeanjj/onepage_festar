@@ -59,8 +59,13 @@
       rel="stylesheet"
       href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@NaN,0,0,0"
     />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"
+    />
     <link rel="stylesheet" href="./dist/css/comm.css" />
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
     <script defer src="./dist/js/comm.js"></script>
   </head>
   <body>
@@ -390,7 +395,7 @@
                 <p class="second_txt">
                   8개 협력기관 (도서관, 박물관, 미술관, 공연장 등)과 전국
                   각지에서 펼쳐진 주요 기획사업, 생활문화뽐시까지 한번에 즐길 수
-                  있는 특별한 공간입니다. 각 지역을 대표하는 문화콘텐츠와
+                  있는 특별한 공간입니다.<br />각 지역을 대표하는 문화콘텐츠와
                   청춘마이크의 버스킹 공연, 남녀노소 누구나 즐길 수 있는 다양한
                   체험까지 준비했습니다.
                 </p>
@@ -407,46 +412,109 @@
                 <p class="second_txt">
                   국민의 문화 누림, 문화가 있는 날이라는 의미를 직접 경험해 볼
                   수 있는 공간으로 삶 속 문화를 직접 만들어가는 장인들이 함께
-                  합니다. 일상에서 즐길 수 있는 문화가 있는 날의 대표 프로그램인
-                  생활문화마켓도 함께 즐겨보세요!
+                  합니다.<br />일상에서 즐길 수 있는 문화가 있는 날의 대표
+                  프로그램인 생활문화마켓도 함께 즐겨보세요!
                 </p>
               </li>
             </ul>
           </div>
         </section>
         <section class="sec-g section_event">
-          <div class="evrnt_wrapper">
-            <div class="local_event">
-              <ul>
-                <li>
+          <h2 class="sectionevent_tit">
+            추천 지역행사
+            <!-- <a href="#" class="tit_more"><span class="blind">더보기</span></a> -->
+          </h2>
+          <div class="inner evrnt_wrapper">
+            <div class="swiper local_event">
+              <div class="swiper-wrapper event_wrap">
+                <div class="swiper-slide event_list">
                   <a
+                    class="event_togo"
                     href="http://www.nabynara.com/bbs/board.php?bo_table=weekend&wr_id=24"
                   >
-                    <img src="./images/event-localimg1.jpg" alt="" />
+                    <img src="./images/event_img1.svg" alt="" />
                   </a>
-                </li>
-                <li>
+                  <div class="event_txtbox listone">
+                    <span class="eventbox_tit">[동화로 만나는 나비]</span>
+                    <p><span class="eventbox_point">기간</span>2023. 10. 28.</p>
+                    <p>
+                      <span class="eventbox_point">시간</span>10:00 AM ~ 12:00
+                      PM
+                    </p>
+                    <p>
+                      <span class="eventbox_point">장소</span>파주 나비나라
+                      박물관
+                    </p>
+                  </div>
+                </div>
+                <div class="swiper-slide event_list">
                   <a
+                    class="event_togo"
                     href="http://www.nabynara.com/bbs/board.php?bo_table=weekend&wr_id=24"
                   >
-                    <img src="./images/event-localimg2.jpg" alt="" />
+                    <img src="./images/23006752_p.gif" alt="" />
                   </a>
-                </li>
-                <li>
+                  <div class="event_txtbox">
+                    <span class="eventbox_tit"
+                      >[거장의 시선, 사람들을 향하다]</span
+                    >
+                    <p>
+                      <span class="eventbox_point">기간</span>2023. 10. 01. ~
+                      10. 09.
+                    </p>
+                    <p>
+                      <span class="eventbox_point">시간</span>10:00 AM ~ 18:00
+                      PM
+                    </p>
+                    <p>
+                      <span class="eventbox_point">장소</span
+                      >서울/국립중앙박물관
+                    </p>
+                  </div>
+                </div>
+                <div class="swiper-slide event_list">
                   <a
+                    class="event_togo"
                     href="http://www.nabynara.com/bbs/board.php?bo_table=weekend&wr_id=24"
                   >
-                    <img src="./images/event-localimg3.jpg" alt="" />
+                    <img src="./images/event_img3.svg" alt="" />
                   </a>
-                </li>
-                <li>
+                  <div class="event_txtbox">
+                    <span class="eventbox_tit"
+                      >[마을 산책 프로젝트 : 밤의 드로잉]</span
+                    >
+                    <p><span class="eventbox_point">기간</span>2023. 10. 01.</p>
+                    <p>
+                      <span class="eventbox_point">시간</span>18:00 PM ~ 21:00
+                      PM
+                    </p>
+                    <p>
+                      <span class="eventbox_point">장소</span>경기 파주시 탄현면
+                      헤이리마을길 72 아트센터 화이트블럭
+                    </p>
+                  </div>
+                </div>
+                <div class="swiper-slide event_list">
                   <a
+                    class="event_togo"
                     href="http://www.nabynara.com/bbs/board.php?bo_table=weekend&wr_id=24"
                   >
-                    <img src="./images/event-localimg4.jpg" alt="" />
+                    <img src="./images/event_img4.svg" alt="" />
                   </a>
-                </li>
-              </ul>
+                  <div class="event_txtbox">
+                    <span class="eventbox_tit">[평화를 만드는 길굿]</span>
+                    <p><span class="eventbox_point">기간</span>2023. 10. 28.</p>
+                    <p>
+                      <span class="eventbox_point">시간</span>15:00 PM ~ 20:00
+                      PM
+                    </p>
+                    <p><span class="eventbox_point">장소</span>화성 매향</p>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-button-next"></div>
+              <div class="swiper-button-prev"></div>
+              <div class="swiper-pagination"></div>
             </div>
             <div class="connection_event"></div>
           </div>

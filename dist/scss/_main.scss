@@ -313,3 +313,79 @@
     }
   }
 }
+.section_event {
+  background: #e73656;
+  color: #fff;
+  padding: 70px 0 100px;
+}
+.sectionevent_tit {
+  position: relative;
+  text-align: center;
+  font-size: 50px;
+  font-family: "SBAggro";
+  font-weight: 500;
+  margin: 60px 0 10px;
+}
+.event_wrap {
+  padding: 50px 0;
+}
+.event_list {
+  .event_togo {
+    display: block;
+    width: 340px;
+    height: 450px;
+    object-fit: contain;
+    img {
+      // border-radius: 10%;
+      box-shadow: 2;
+    }
+  }
+  .event_txtbox {
+    font-size: 24px;
+    width: 50%;
+    .eventbox_tit {
+      font-size: 40px;
+      font-weight: 600;
+    }
+    .eventbox_point {
+      position: relative;
+      font-weight: 600;
+      margin-right: 20px;
+      &::after {
+        position: absolute;
+        top: -22%;
+        right: -32%;
+        display: block;
+        content: ":";
+      }
+    }
+  }
+  .listone {
+    position: relative;
+    &::after {
+      position: absolute;
+      z-index: -1;
+      top: 0;
+      left: 0;
+      display: block;
+      content: "";
+      background: url(../../images/Vector1.png) no-repeat 0 0;
+      width: 360px;
+      height: 95px;
+    }
+  }
+}
+.swiper-button-next,
+.swiper-button-prev {
+  color: #fff;
+}
+.swiper-horizontal > .swiper-pagination-bullets,
+.swiper-pagination-bullets.swiper-pagination-horizontal,
+.swiper-pagination-custom,
+.swiper-pagination-fraction {
+  position: absolute;
+  bottom: 0;
+  .swiper-pagination-bullet {
+    background: #fff;
+  }
+}

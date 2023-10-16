@@ -324,7 +324,7 @@ img {
 }
 .gnb .gnb_maintit {
   display: block;
-  font-size: 18px;
+  font-size: 1.125rem;
   font-weight: 500;
   height: 80px;
   line-height: 80px;
@@ -386,7 +386,7 @@ img {
 
 .title {
   position: relative;
-  font-size: 40px;
+  font-size: 2.5rem;
   text-align: center;
   padding-bottom: 150px;
   font-family: "SBAggro";
@@ -394,16 +394,27 @@ img {
 }
 .title .title_sub {
   display: block;
-  font-size: 55px;
+  font-size: 3.4375rem;
   font-weight: 300;
   color: #e73656;
+}
+
+.swiper {
+  width: 100%;
+  height: 100%;
+}
+
+.swiper-slide {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row-reverse;
 }
 
 .main_visual {
   position: relative;
   padding: 480px;
   background: url(../../images/mainbrtnsd.jpg) no-repeat 0 0;
-  background-size: 100% 100vh;
 }
 .main_visual::after {
   position: absolute;
@@ -427,7 +438,7 @@ img {
 }
 .main_visual .banner_txtbox .bnr_tit {
   position: relative;
-  font-size: 65px;
+  font-size: 4.0625rem;
   color: #fff;
   font-weight: 700;
 }
@@ -444,7 +455,7 @@ img {
   background: rgba(231, 54, 86, 0.92);
 }
 .main_visual .banner_txtbox .banner_txt {
-  font-size: 22px;
+  font-size: 1.375rem;
   font-weight: 600;
   color: #eee;
   margin-top: 15px;
@@ -464,7 +475,7 @@ img {
 }
 .main_infonav .infonav_txt li {
   position: relative;
-  font-size: 18px;
+  font-size: 1.125rem;
   font-weight: 600;
   width: 20%;
 }
@@ -682,7 +693,7 @@ img {
 .content_programsecond .second_lst {
   position: relative;
   text-align: center;
-  font-size: 18px;
+  font-size: 1.125rem;
   font-weight: 500;
   line-height: 1.5;
   width: 30%;
@@ -691,7 +702,7 @@ img {
   display: block;
 }
 .content_programsecond .second_lst .second_titbox {
-  font-size: 18px;
+  font-size: 1.125rem;
   font-weight: 600;
   color: #fff;
   background: #e73656;
@@ -711,7 +722,7 @@ img {
   align-items: center;
   justify-content: center;
   height: 86px;
-  font-size: 36px;
+  font-size: 2.25rem;
   color: #e73656;
   font-weight: 700;
   margin-bottom: 35px;
@@ -720,4 +731,87 @@ img {
 .content_programsecond .second_lst .second_txt {
   font-weight: 300;
   opacity: 0.7;
+}
+
+.section_event {
+  background: #e73656;
+  color: #fff;
+  padding: 70px 0 100px;
+}
+
+.sectionevent_tit {
+  position: relative;
+  text-align: center;
+  font-size: 50px;
+  font-family: "SBAggro";
+  font-weight: 500;
+  margin: 60px 0 10px;
+}
+
+.event_wrap {
+  padding: 50px 0;
+}
+
+.event_list .event_togo {
+  display: block;
+  width: 340px;
+  height: 450px;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+.event_list .event_togo img {
+  box-shadow: 2;
+}
+.event_list .event_txtbox {
+  font-size: 24px;
+  width: 50%;
+}
+.event_list .event_txtbox .eventbox_tit {
+  font-size: 40px;
+  font-weight: 600;
+}
+.event_list .event_txtbox .eventbox_point {
+  position: relative;
+  font-weight: 600;
+  margin-right: 20px;
+}
+.event_list .event_txtbox .eventbox_point::after {
+  position: absolute;
+  top: -22%;
+  right: -32%;
+  display: block;
+  content: ":";
+}
+.event_list .listone {
+  position: relative;
+}
+.event_list .listone::after {
+  position: absolute;
+  z-index: -1;
+  top: 0;
+  left: 0;
+  display: block;
+  content: "";
+  background: url(../../images/Vector1.png) no-repeat 0 0;
+  width: 360px;
+  height: 95px;
+}
+
+.swiper-button-next,
+.swiper-button-prev {
+  color: #fff;
+}
+
+.swiper-horizontal > .swiper-pagination-bullets,
+.swiper-pagination-bullets.swiper-pagination-horizontal,
+.swiper-pagination-custom,
+.swiper-pagination-fraction {
+  position: absolute;
+  bottom: 0;
+}
+.swiper-horizontal > .swiper-pagination-bullets .swiper-pagination-bullet,
+.swiper-pagination-bullets.swiper-pagination-horizontal .swiper-pagination-bullet,
+.swiper-pagination-custom .swiper-pagination-bullet,
+.swiper-pagination-fraction .swiper-pagination-bullet {
+  background: #fff;
 }/*# sourceMappingURL=comm.css.map */
