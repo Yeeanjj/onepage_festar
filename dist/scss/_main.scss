@@ -10,6 +10,7 @@
   position: relative;
   padding: 480px;
   background: url(../../images/mainbrtnsd.jpg) no-repeat 0 0;
+  background-size: cover;
   &::after {
     position: absolute;
     top: 0;
@@ -330,25 +331,28 @@
   padding: 50px 0;
 }
 .event_list {
+  // position: relative;
+  // overflow: visible;
   .event_togo {
     display: block;
     width: 340px;
     height: 450px;
     object-fit: contain;
     img {
-      // border-radius: 10%;
-      box-shadow: 2;
+      border-radius: 10px;
     }
   }
   .event_txtbox {
-    font-size: 24px;
-    width: 50%;
+    font-size: 20px;
+    text-align: center;
+    padding: 20px;
     .eventbox_tit {
-      font-size: 40px;
+      display: block;
+      font-size: 28px;
       font-weight: 600;
+      margin-bottom: 10px;
     }
     .eventbox_point {
-      position: relative;
       font-weight: 600;
       margin-right: 20px;
       &::after {
@@ -360,31 +364,23 @@
       }
     }
   }
-  .listone {
-    position: relative;
-    &::after {
-      position: absolute;
-      z-index: -1;
-      top: 0;
-      left: 0;
-      display: block;
-      content: "";
-      background: url(../../images/Vector1.png) no-repeat 0 0;
-      width: 360px;
-      height: 95px;
-    }
-  }
 }
+// .event_subimages {
+//   position: absolute;
+//   top: 0;
+//   right: 0;
+// }
 .swiper-button-next,
 .swiper-button-prev {
   color: #fff;
+  top: 36%;
 }
 .swiper-horizontal > .swiper-pagination-bullets,
 .swiper-pagination-bullets.swiper-pagination-horizontal,
 .swiper-pagination-custom,
 .swiper-pagination-fraction {
   position: absolute;
-  bottom: 0;
+  bottom: 30px;
   .swiper-pagination-bullet {
     background: #fff;
   }

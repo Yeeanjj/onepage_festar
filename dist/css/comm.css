@@ -400,21 +400,23 @@ img {
 }
 
 .swiper {
-  width: 100%;
+  width: 45%;
   height: 100%;
+  margin: 0;
 }
 
 .swiper-slide {
   display: flex;
   justify-content: center;
   align-items: center;
-  flex-direction: row-reverse;
+  flex-direction: column;
 }
 
 .main_visual {
   position: relative;
   padding: 480px;
   background: url(../../images/mainbrtnsd.jpg) no-repeat 0 0;
+  background-size: cover;
 }
 .main_visual::after {
   position: absolute;
@@ -760,18 +762,20 @@ img {
      object-fit: contain;
 }
 .event_list .event_togo img {
-  box-shadow: 2;
+  border-radius: 10px;
 }
 .event_list .event_txtbox {
-  font-size: 24px;
-  width: 50%;
+  font-size: 20px;
+  text-align: center;
+  padding: 20px;
 }
 .event_list .event_txtbox .eventbox_tit {
-  font-size: 40px;
+  display: block;
+  font-size: 28px;
   font-weight: 600;
+  margin-bottom: 10px;
 }
 .event_list .event_txtbox .eventbox_point {
-  position: relative;
   font-weight: 600;
   margin-right: 20px;
 }
@@ -782,24 +786,11 @@ img {
   display: block;
   content: ":";
 }
-.event_list .listone {
-  position: relative;
-}
-.event_list .listone::after {
-  position: absolute;
-  z-index: -1;
-  top: 0;
-  left: 0;
-  display: block;
-  content: "";
-  background: url(../../images/Vector1.png) no-repeat 0 0;
-  width: 360px;
-  height: 95px;
-}
 
 .swiper-button-next,
 .swiper-button-prev {
   color: #fff;
+  top: 36%;
 }
 
 .swiper-horizontal > .swiper-pagination-bullets,
@@ -807,7 +798,7 @@ img {
 .swiper-pagination-custom,
 .swiper-pagination-fraction {
   position: absolute;
-  bottom: 0;
+  bottom: 30px;
 }
 .swiper-horizontal > .swiper-pagination-bullets .swiper-pagination-bullet,
 .swiper-pagination-bullets.swiper-pagination-horizontal .swiper-pagination-bullet,

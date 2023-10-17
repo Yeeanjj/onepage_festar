@@ -129,15 +129,16 @@ img {
 }
 
 .swiper {
-  width: 100%;
+  width: 45%;
   height: 100%;
+  margin: 0;
 }
 
 .swiper-slide {
   display: flex;
   justify-content: center;
   align-items: center;
-  flex-direction: row-reverse;
+  flex-direction: column;
 }
 
 @import "main";
