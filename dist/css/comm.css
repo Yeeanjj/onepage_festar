@@ -790,6 +790,7 @@ img {
   margin-bottom: 10px;
 }
 .event_list .event_txtbox .eventbox_point {
+  position: relative;
   font-weight: 600;
   margin-right: 20px;
 }
