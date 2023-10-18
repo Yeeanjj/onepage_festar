@@ -750,8 +750,22 @@ img {
   margin: 60px 0 10px;
 }
 
-.event_wrap {
-  padding: 50px 0;
+.local_event {
+  position: relative;
+}
+.local_event .subslid {
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+.evrnt_wrapper {
+  position: relative;
+}
+.evrnt_wrapper .event_subwrap {
+  position: absolute;
+  top: 0;
+  right: 0;
 }
 
 .event_list .event_togo {
