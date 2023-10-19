@@ -906,6 +906,28 @@ img {
 .event_list .event_togo img {
   border-radius: 10px;
 }
+.event_list .event_txtbox {
+  font-size: 20px;
+  text-align: center;
+  padding: 20px;
+}
+.event_list .event_txtbox .eventbox_tit {
+  display: block;
+  font-size: 28px;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+.event_list .event_txtbox .eventbox_point {
+  font-weight: 600;
+  margin-right: 20px;
+}
+.event_list .event_txtbox .eventbox_point::after {
+  position: absolute;
+  top: -22%;
+  right: -32%;
+  display: block;
+  content: ":";
+}
 
 .swiper-button-next,
 .swiper-button-prev {

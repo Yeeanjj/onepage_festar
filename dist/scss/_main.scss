@@ -381,6 +381,28 @@
       border-radius: 10px;
     }
   }
+  .event_txtbox {
+    font-size: 20px;
+    text-align: center;
+    padding: 20px;
+    .eventbox_tit {
+      display: block;
+      font-size: 28px;
+      font-weight: 600;
+      margin-bottom: 10px;
+    }
+    .eventbox_point {
+      font-weight: 600;
+      margin-right: 20px;
+      &::after {
+        position: absolute;
+        top: -22%;
+        right: -32%;
+        display: block;
+        content: ":";
+      }
+    }
+  }
 }
 
 .swiper-button-next,
@@ -401,17 +423,6 @@
     height: 10px;
   }
 }
-// .localevent_more {
-//   position: absolute;
-//   top: 0;
-//   right: 0;
-//   &::after {
-//     display: block;
-//     content: "+";
-//     font-size: 50px;
-//     font-weight: 500;
-//   }
-// }
 .section_connectevent {
   background: #fff;
   position: relative;
