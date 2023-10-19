@@ -126,7 +126,7 @@ body {
   background: #fff;
   font-size: 16px;
   line-height: 1.5;
-  font-family: "Pretendard", "Malgun Gothic", "맑은 고딕", sans-serif;
+  font-family: "Pretendard", "맑은 고딕", sans-serif;
   color: #000;
 }
 
@@ -399,8 +399,32 @@ img {
   color: #e73656;
 }
 
+.event_txtbox {
+  font-size: 20px;
+  text-align: left;
+  padding: 20px;
+}
+.event_txtbox .eventbox_tit {
+  display: block;
+  font-size: 30px;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+.event_txtbox .eventbox_point {
+  position: relative;
+  font-weight: 600;
+  margin-right: 24px;
+}
+.event_txtbox .eventbox_point::after {
+  position: absolute;
+  top: -22%;
+  right: -45%;
+  display: block;
+  content: ":";
+}
+
 .swiper {
-  width: 45%;
+  width: 100%;
   height: 100%;
   margin: 0;
 }
@@ -409,7 +433,77 @@ img {
   display: flex;
   justify-content: center;
   align-items: center;
-  flex-direction: column;
+  padding: 80px 0;
+}
+
+#footer {
+  position: relative;
+  z-index: 2;
+  background: #333;
+}
+
+.footerbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: #eee;
+  font-weight: 300;
+  padding: 50px 0;
+}
+
+.bottom_logo a {
+  display: block;
+  width: 160px;
+  opacity: 0.9;
+}
+
+.linkbar {
+  display: flex;
+}
+.linkbar .linklst {
+  display: block;
+  margin-right: 20px;
+}
+.linkbar .linklst a {
+  color: #eee;
+  font-weight: 500;
+}
+
+.add_txt {
+  margin-top: 10px;
+}
+.add_txt .txtone {
+  display: flex;
+  margin-bottom: 5px;
+}
+.add_txt .txtone .addtime {
+  display: block;
+  margin-right: 12px;
+}
+
+.togosns {
+  display: flex;
+  justify-content: flex-end;
+  margin-bottom: 10px;
+}
+.togosns .snslst a {
+  display: block;
+  width: 46px;
+  height: 46px;
+  opacity: 0.9;
+}
+
+.togobar {
+  display: flex;
+}
+.togobar .togolst {
+  margin-right: 20px;
+}
+.togobar .togolst:last-child {
+  margin-right: 0;
+}
+.togobar .togolst img {
+  width: 150px;
 }
 
 .main_visual {
@@ -566,8 +660,23 @@ img {
 }
 
 .section_infomation {
+  position: relative;
+  z-index: 2;
   background: #e73656;
   padding: 100px 0;
+}
+.section_infomation::after {
+  z-index: -2;
+  display: block;
+  position: absolute;
+  top: -10%;
+  left: 0;
+  content: "";
+  width: 30%;
+  height: 240%;
+  transform: rotate(-28.765deg);
+  background: url(../../images/bgimgpoint.png) no-repeat 0 0;
+  background-size: contain;
 }
 .section_infomation .festar_infobox {
   display: flex;
@@ -735,19 +844,46 @@ img {
   opacity: 0.7;
 }
 
-.section_event {
+.section_localevent {
+  position: relative;
+  z-index: 2;
   background: #e73656;
   color: #fff;
-  padding: 70px 0 100px;
+  padding: 80px 0 150px;
+}
+.section_localevent::after {
+  z-index: -2;
+  display: block;
+  position: absolute;
+  top: -15%;
+  right: 0;
+  content: "";
+  width: 30%;
+  height: 140%;
+  transform: rotate(19.235deg);
+  background: url(../../images/bgimgpoint.png) no-repeat 0 0;
+  background-size: cover;
 }
 
 .sectionevent_tit {
-  position: relative;
   text-align: center;
   font-size: 50px;
   font-family: "SBAggro";
   font-weight: 500;
-  margin: 60px 0 10px;
+}
+
+.evrnt_local {
+  position: relative;
+}
+.evrnt_local .localevent_more::after {
+  position: absolute;
+  top: -12%;
+  right: 0;
+  display: block;
+  content: "+";
+  color: #fff;
+  font-weight: 500;
+  font-size: 60px;
 }
 
 .local_event {
@@ -759,52 +895,25 @@ img {
   right: 0;
 }
 
-.evrnt_wrapper {
-  position: relative;
-}
-.evrnt_wrapper .event_subwrap {
-  position: absolute;
-  top: 0;
-  right: 0;
-}
-
 .event_list .event_togo {
   display: block;
-  width: 340px;
-  height: 450px;
-  -o-object-fit: contain;
-     object-fit: contain;
+  width: 460px;
+  height: 580px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  margin-right: 50px;
 }
 .event_list .event_togo img {
   border-radius: 10px;
-}
-.event_list .event_txtbox {
-  font-size: 20px;
-  text-align: center;
-  padding: 20px;
-}
-.event_list .event_txtbox .eventbox_tit {
-  display: block;
-  font-size: 28px;
-  font-weight: 600;
-  margin-bottom: 10px;
-}
-.event_list .event_txtbox .eventbox_point {
-  font-weight: 600;
-  margin-right: 20px;
-}
-.event_list .event_txtbox .eventbox_point::after {
-  position: absolute;
-  top: -22%;
-  right: -32%;
-  display: block;
-  content: ":";
 }
 
 .swiper-button-next,
 .swiper-button-prev {
   color: #fff;
-  top: 36%;
+}
+.swiper-button-next::after,
+.swiper-button-prev::after {
+  font-size: 3.75rem;
 }
 
 .swiper-horizontal > .swiper-pagination-bullets,
@@ -812,11 +921,18 @@ img {
 .swiper-pagination-custom,
 .swiper-pagination-fraction {
   position: absolute;
-  bottom: 30px;
 }
 .swiper-horizontal > .swiper-pagination-bullets .swiper-pagination-bullet,
 .swiper-pagination-bullets.swiper-pagination-horizontal .swiper-pagination-bullet,
 .swiper-pagination-custom .swiper-pagination-bullet,
 .swiper-pagination-fraction .swiper-pagination-bullet {
   background: #fff;
+  width: 10px;
+  height: 10px;
+}
+
+.section_connectevent {
+  background: #fff;
+  position: relative;
+  z-index: 5;
 }/*# sourceMappingURL=comm.css.map */

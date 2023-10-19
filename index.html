@@ -66,6 +66,10 @@
     <link rel="stylesheet" href="./dist/css/comm.css" />
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.8/ScrollMagic.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.3/TweenMax.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/plugins/debug.addIndicators.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.5/plugins/animation.gsap.js"></script>
     <script defer src="./dist/js/comm.js"></script>
   </head>
   <body>
@@ -152,14 +156,6 @@
               >
             </p>
           </div>
-          <!-- <div class="video_wrap">
-            <video autoplay muted loop>
-              <source
-                src="https://www.culture.go.kr/wday/festa10/html/resource/media/fest_10th.mp4"
-                type="video/mp4"
-              />
-            </video>
-          </div> -->
         </section>
         <div class="main_infonav">
           <ul class="inner infonav_txt">
@@ -419,94 +415,91 @@
             </ul>
           </div>
         </section>
-        <section class="sec-g section_event">
-          <h2 class="sectionevent_tit">
-            추천 지역행사
-            <!-- <a href="#" class="tit_more"><span class="blind">더보기</span></a> -->
-          </h2>
-          <div class="inner evrnt_wrapper">
+        <section class="sec-g section_localevent">
+          <h2 class="inner sectionevent_tit">추천! 지역행사</h2>
+          <div class="inner evrnt_local">
             <div class="swiper local_event">
               <div class="swiper-wrapper event_wrap">
                 <div class="swiper-slide event_list">
                   <a
                     class="event_togo"
-                    href="http://www.nabynara.com/bbs/board.php?bo_table=weekend&wr_id=24"
+                    href="https://www.instagram.com/p/CyXzd5hJm9P/?utm_source=ig_web_copy_link&igshid=MzRlODBiNWFlZA%3D%3D&img_index=1"
                   >
-                    <img src="./images/event_img1.svg" alt="" />
+                    <img src="./images/localimg1.jpg" alt="" />
                   </a>
                   <div class="event_txtbox listone">
-                    <span class="eventbox_tit">[동화로 만나는 나비]</span>
+                    <span class="eventbox_tit">[안녕, 당신]</span>
                     <p><span class="eventbox_point">기간</span>2023. 10. 28.</p>
                     <p>
-                      <span class="eventbox_point">시간</span>10:00 AM ~ 12:00
+                      <span class="eventbox_point">시간</span>16:00 PM ~ 20:00
                       PM
                     </p>
-                    <p>
-                      <span class="eventbox_point">장소</span>파주 나비나라
-                      박물관
-                    </p>
+                    <p><span class="eventbox_point">장소</span>문화비축기지</p>
                   </div>
                 </div>
                 <div class="swiper-slide event_list">
                   <a
                     class="event_togo"
-                    href="https://www.culture.go.kr/wday/recommendProgram/recommendProgramView.do?miv_pageNo=1&miv_pageSize=16&apply_seq=1105&s_genre_seq=&s_area_cd=&searchText"
+                    href="https://www.moranmuseum.org/cultural/?q=YToxOntzOjEyOiJrZXl3b3JkX3R5cGUiO3M6MzoiYWxsIjt9&bmode=view&idx=16489927&t=board"
                   >
-                    <img src="./images/event_img2.jpg" alt="" />
-                  </a>
-                  <div class="event_txtbox">
-                    <span class="eventbox_tit">[고래종이접기 키트]</span>
-                    <p>
-                      <span class="eventbox_point">기간</span>2023. 10. 04. ~
-                      10. 25.
-                    </p>
-                    <p>
-                      <span class="eventbox_point">시간</span>매주 수요일 13:00
-                      PM, 15:00 PM
-                    </p>
-                    <p>
-                      <span class="eventbox_point">장소</span>울산 남구
-                      장생포고래로 244<br />장생포고래박물관
-                    </p>
-                  </div>
-                </div>
-                <div class="swiper-slide event_list">
-                  <a
-                    class="event_togo"
-                    href="http://www.wuminartcenter.org/board/view/pro_adult/2323"
-                  >
-                    <img src="./images/event_img3.jpg" alt="" />
+                    <img src="./images/localimg2.jpg" alt="" />
                   </a>
                   <div class="event_txtbox">
                     <span class="eventbox_tit"
-                      >[명화가꾸 - 명화와 읽는 경제]</span
+                      >[모란, 그리고 독서(Drawing and Reading)]</span
                     >
-                    <p><span class="eventbox_point">기간</span>2023. 10. 25.</p>
                     <p>
-                      <span class="eventbox_point">시간</span>14:00 PM ~ 16:00
-                      PM
+                      <span class="eventbox_point">기간</span>2023. 10. 04. ~
+                      10. 31.
                     </p>
                     <p>
-                      <span class="eventbox_point">장소</span>충북 청주시 상당구
-                      사북로 154<br />우민타워 B1 우민아트센터 교육실
+                      <span class="eventbox_point">시간</span>화 ~ 일 09:30 AM ~
+                      18:00 PM (입장마감 17:30PM)
+                    </p>
+                    <p>
+                      <span class="eventbox_point">장소</span>경기/모란미술관
                     </p>
                   </div>
                 </div>
                 <div class="swiper-slide event_list">
                   <a
                     class="event_togo"
-                    href="http://www.nabynara.com/bbs/board.php?bo_table=weekend&wr_id=24"
+                    href="https://museumhanmi.or.kr/post_program/10%EC%9B%94-%EB%AC%B8%ED%99%94%EA%B0%80-%EC%9E%88%EB%8A%94-%EB%82%A0-%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%A8-%EC%84%9C%EC%B4%8C%EC%97%90%EC%84%9C-%EB%A7%8C%EB%82%98%EB%8A%94-%EC%82%AC%EC%A7%84/"
                   >
-                    <img src="./images/event_img4.svg" alt="" />
+                    <img src="./images/localimg3.jpg" alt="" />
                   </a>
                   <div class="event_txtbox">
-                    <span class="eventbox_tit">[평화를 만드는 길굿]</span>
+                    <span class="eventbox_tit">[서촌에서 만나는 사진]</span>
                     <p><span class="eventbox_point">기간</span>2023. 10. 28.</p>
                     <p>
-                      <span class="eventbox_point">시간</span>15:00 PM ~ 20:00
+                      <span class="eventbox_point">시간</span>14:00 PM ~ 17:00
                       PM
                     </p>
-                    <p><span class="eventbox_point">장소</span>화성 매향</p>
+                    <p>
+                      <span class="eventbox_point">장소</span>뮤지엄한미 삼청
+                    </p>
+                  </div>
+                </div>
+                <div class="swiper-slide event_list">
+                  <a
+                    class="event_togo"
+                    href="https://www.gcon.or.kr/board/view?pageNum=1&rowCnt=10&linkId=14499&menuId=MENU02158&schType=0&schText=&boardStyle=&categoryId=&continent=&country="
+                  >
+                    <img src="./images/localimg4.jpg" alt="" />
+                  </a>
+                  <div class="event_txtbox">
+                    <span class="eventbox_tit">[오르:빛 재인폭포]</span>
+                    <p>
+                      <span class="eventbox_point">기간</span>2023. 10. 05. ~
+                      2023. 10. 22.
+                    </p>
+                    <p>
+                      <span class="eventbox_point">시간</span>18:00 PM ~ 21:00
+                      PM
+                    </p>
+                    <p>
+                      <span class="eventbox_point">장소</span>경기/연천 재인폭포
+                    </p>
                   </div>
                 </div>
               </div>
@@ -514,46 +507,70 @@
               <div class="swiper-button-prev"></div>
               <div class="swiper-pagination"></div>
             </div>
-            <div class="event_subwrap">
-              <div class="gorea">
-                <img src="./images/event_subimg.jpg" alt="" />
-              </div>
-            </div>
-
-            <div class="connection_event"></div>
+            <a class="localevent_more" href="#"></a>
           </div>
         </section>
       </main>
       <footer id="footer">
-        <!-- <ul class="gnb_togo">
-              <li>
+        <div class="inner footerbar">
+          <h1 class="bottom_logo">
+            <a href="#">
+              <img src="./images/footerlogo.png" alt="" />
+            </a>
+          </h1>
+          <div class="address">
+            <div class="footer_link">
+              <ul class="linkbar">
+                <li class="linklst"><a href="#">개인정보처리방침</a></li>
+                <li class="linklst"><a href="#">오류신고</a></li>
+                <li class="linklst"><a href="#">제휴신청</a></li>
+              </ul>
+            </div>
+            <div class="add_txt">
+              <p class="txtone">
+                <span class="addtime">문의 : 02-2623-3100 (09:00 ~ 18:00)</span>
+                <span class="addtime">점심시간 12:00 ~ 13:00 제외</span>
+              </p>
+              <p>ⓒ 지역문화진흥원 ALL RIGHTS RESERVED</p>
+            </div>
+          </div>
+          <div class="footer_togo">
+            <ul class="togosns">
+              <li class="snslst">
                 <a href="https://www.youtube.com/@cultureday">
-                  <img src="./dist/images/icon_youtube 1.jpg" alt="youtube" />
+                  <img src="./images/YouTube.png" alt="youtube" />
                   <span class="blind">유튜브</span>
                 </a>
               </li>
-              <li>
+              <li class="snslst">
                 <a href="https://www.youtube.com/@cultureday">
-                  <img
-                    src="./dist/images/icon_instagram 1.jpg"
-                    alt="instagram"
-                  />
+                  <img src="./images/Instagram.png" alt="instagram" />
                   <span class="blind">인스타그램</span>
                 </a>
               </li>
-              <li>
+              <li class="snslst">
                 <a href="https://www.facebook.com/wdayw">
-                  <img src="./dist/images/icon_facebook 1.jpg" alt="facebook" />
+                  <img src="./images/Facebook.png" alt="facebook" />
                   <span class="blind">페이스북</span>
                 </a>
               </li>
-              <li>
+              <li class="snslst">
                 <a href="https://blog.naver.com/pccekorea">
-                  <img src="./dist/images/icon_blog 1.jpg" alt="blog" />
+                  <img src="./images/blog.png" alt="blog" />
                   <span class="blind">블로그</span>
                 </a>
               </li>
-            </ul> -->
+            </ul>
+            <ul class="togobar">
+              <li class="togolst">
+                <img src="./images/togo1.png" alt="" />
+              </li>
+              <li class="togolst">
+                <img src="./images/togo2.png" alt="" />
+              </li>
+            </ul>
+          </div>
+        </div>
       </footer>
     </div>
   </body>

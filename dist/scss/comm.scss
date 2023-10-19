@@ -127,9 +127,31 @@ img {
     color: #e73656;
   }
 }
-
+.event_txtbox {
+  font-size: 20px;
+  text-align: left;
+  padding: 20px;
+  .eventbox_tit {
+    display: block;
+    font-size: 30px;
+    font-weight: 600;
+    margin-bottom: 10px;
+  }
+  .eventbox_point {
+    position: relative;
+    font-weight: 600;
+    margin-right: 24px;
+    &::after {
+      position: absolute;
+      top: -22%;
+      right: -45%;
+      display: block;
+      content: ":";
+    }
+  }
+}
 .swiper {
-  width: 45%;
+  width: 100%;
   height: 100%;
   margin: 0;
 }
@@ -138,7 +160,75 @@ img {
   display: flex;
   justify-content: center;
   align-items: center;
-  flex-direction: column;
+  padding: 80px 0;
+}
+
+#footer {
+  position: relative;
+  z-index: 2;
+  background: #333;
+}
+.footerbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: #eee;
+  font-weight: 300;
+  padding: 50px 0;
+}
+.bottom_logo {
+  a {
+    display: block;
+    width: 160px;
+    opacity: 0.9;
+  }
+}
+.linkbar {
+  display: flex;
+  .linklst {
+    display: block;
+    margin-right: 20px;
+    a {
+      color: #eee;
+      font-weight: 500;
+    }
+  }
+}
+.add_txt {
+  margin-top: 10px;
+  .txtone {
+    display: flex;
+    margin-bottom: 5px;
+    .addtime {
+      display: block;
+      margin-right: 12px;
+    }
+  }
+}
+.togosns {
+  display: flex;
+  justify-content: flex-end;
+  margin-bottom: 10px;
+  .snslst {
+    a {
+      display: block;
+      width: 46px;
+      height: 46px;
+      opacity: 0.9;
+    }
+  }
+}
+.togobar {
+  display: flex;
+  .togolst {
+    margin-right: 20px;
+    &:last-child {
+      margin-right: 0;
+    }
+    img {
+      width: 150px;
+    }
+  }
 }
 
 @import "main";
